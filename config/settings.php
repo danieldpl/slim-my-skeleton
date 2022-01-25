@@ -4,25 +4,25 @@
 return [
     'slim'  => [
         // Fill in if you are going to run the application in a subdirectory. (Ex: '/slim')
-        'basePath'  => '/Slimv4'
+        'basePath'      => ''
     ],
     'twig'  => [
-        'twigViewPath' => __DIR__.'/../views',
-        'twigOptions' => [
-            'cache' => false
+        'twigViewPath'  => __DIR__.'/../views',
+        'twigOptions'   => [
+            'cache'     => false
         ]
 
     ],
     'db'    => [
-        'driver' => 'mysql',
-        'host' => 'localhost',
-        'database' => 'portal',
-        'username' => 'root',
-        'password' => '',
-        'charset' => 'utf8mb4',
-        'collation' => 'utf8mb4_unicode_ci',
-        'prefix' => '',
-        'options' => [
+        'driver'        => 'mysql',
+        'host'          => 'localhost',
+        'database'      => '',
+        'username'      => '',
+        'password'      => '',
+        'charset'       => 'utf8mb4',
+        'collation'     => 'utf8mb4_unicode_ci',
+        'prefix'        => '',
+        'options'       => [
             // Turn off persistent connections
             PDO::ATTR_PERSISTENT => false,
             // Enable exceptions
